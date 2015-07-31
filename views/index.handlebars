@@ -30,19 +30,10 @@
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">     
                 <li><a href="/"><i class="glyphicon glyphicon-home"></i>&nbsp;&nbsp;&nbsp;&nbsp;Home</a></li>
-                <li class="dropdown">
-                    <a class="dropdown-toggle" role="button" data-toggle="dropdown" href="/providers"><i class="glyphicon glyphicon-asterisk"></i>&nbsp;&nbsp;&nbsp;&nbsp;Providers<span class="caret"></span></a>
-                    <ul id="g-account-menu" class="dropdown-menu" role="menu">
-                        <li><a href="/providers#brighthouse"><div class="bh_ico"></div> Bright House</a></li>
-                        <li><a href="/providers#charter"><div class="ch_ico"></div> Charter</a></li>
-                        <li><a href="/providers#cox"><div class="cox_ico"></div> Cox</a></li>
-                        <li><a href="/providers#directv"><div class="dtv_ico"></div> DIRECTV</a></li>
-                        <li><a href="/providers#mediacom"><div class="mc_ico"></div> Mediacom</a></li>
-                        <li><a href="/providers#twc"><div class="twc_ico"></div> Time Warner</a></li>
-                    </ul>
-                </li>
-                <li><a title="Training" data-toggle="modal" href="#training"><span class="glyphicon glyphicon-book"></span>&nbsp;&nbsp;&nbsp;&nbsp;Manuals</a></li>                    
-                <li><a title="Old Cheat Sheet" data-toggle="modal" href="http://salerity.com/manager/cheat-sheet"><span class="glyphicon glyphicon-file"></span>&nbsp;&nbsp;&nbsp;&nbsp;Old Cheat Sheet</a></li>
+                <li><a href="/manuals/ab_training_manual.pdf"><span class="glyphicon glyphicon-book"></span>&nbsp;&nbsp;&nbsp;&nbsp;Aureus Business Training</a></li>           
+                
+                <li><a href="/manuals/ab_salerity.pdf"><span class="glyphicon glyphicon-file"></span>&nbsp;&nbsp;&nbsp;&nbsp;Salerity Slideshow</a></li>   
+                <li><a href="/manuals/_.pdf"><span class="glyphicon glyphicon-book"></span>&nbsp;&nbsp;&nbsp;&nbsp;Telarus Manual</a></li>
             </ul>
         </div>
     </div>
@@ -64,18 +55,18 @@
             </ul>
             <!-- SCRIPT SHORTCUTS -->
             <ul class="nav nav-stacked">
-                    <h3 class="title nostyle2"> Script Shortcuts</h3>
+                    <h5 class="nostyle2"> Script Shortcuts</h5>
 							<div class="one-third">
                                 <li>
                                     <a href="#legend" data-toggle="modal">&nbsp;&nbsp;&nbsp;&nbsp;Legend</a>
-                                </li></br>
+                                </li>
                                 <a href="#sh_inbound"><strong class="sub">Start Here (Inbound Calls)</strong></a>
                                 <ul>
                                     <li>
                                         <a href="#start">Begin</a>
                                     </li>
                                 </ul>
-								<a href="#salesnewservice"><strong class="sub">Sales / New Service (Inbound Calls)</strong></a>
+								<a href="#salesnewservice_in"><strong class="sub">Sales / New Service (Inbound Calls)</strong></a>
                                 <ul>
                                     <li><a href="#sales">Collect Information and Serviceability</a></li>
                                 </ul>
@@ -150,10 +141,14 @@
                 <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9 scrollit">
                      <div class="panel panel-default">
                         <a name="sh_inbound"></a>
-                        <div class="panel-heading"><h3 class="nostyle"><b>Home [Script]</b></h3></div>
+                        <div class="panel-heading"><h5><b>Aureus Business Script</b></h5></div>
                         <div class="panel-body">
                             <div class="one-third">
-								<h3>Start Here (Inbound Calls)</h3><hr>
+								<a class="section" id="salesnewservice">name</a>
+								<h3>Start Here (Inbound Calls)</h3>
+                                <p>
+									&nbsp;
+								</p>
                                 <a name="start"></a>
                                 <h4>Begin</h4>
 								<ul class="switch-color icon-color">
@@ -175,8 +170,11 @@
                                 <p>
 									&nbsp;
 								</p>
-                                <a class="section" id="salesnewservice">name</a>
-								<h3>Sales / New Service (Inbound Calls)</h3><hr>
+                                <a class="section" id="salesnewservice_in">name</a>
+								<h3>Sales / New Service (Inbound Calls)</h3>
+                                <p>
+									&nbsp;
+								</p>
                                 <a name="collect-info" id="sales"></a>
 								<h4>Collect Information &amp; Serviceability</h4>
 								<ul class="icon-check">
@@ -216,6 +214,9 @@
 									<li class="icon-check2">										
                                         ACTION: Check Serviceability using <a href="https://www2.charterbusiness.com/partner/tlr" target="_blank" style="display: inline; padding-left: 0px;">Charter Spectrum Serviceability</a> 
 									</li>
+                                    <p>
+                                      &nbsp;
+                                    </p>
                                     <span class="option"><b>[IF NOT SERVICEABLE]</b></span>
 									<li class="icon-check2">
 										ACTION: Go to Telarus to access DSL, wireless, or Satellite providers
@@ -248,15 +249,15 @@
 									&nbsp;
 								</p>
                                 <a class="section" id="closeandconvert">name</a>
-								<h3>Close and Convert</h3><hr>
-								<a name="orderprocess" id="orderprocess"></a>
+								<h3>Close and Convert</h3>         
+								<a class="section" id="orderprocess">name</a>
 								<h4>Order Process</h4>
 								<ul class="icon-check">
 									<li class="icon-check2">
 										ACTION: Get the customer’s email address to send them a proposal or Service Agreement
 									</li>
                                     <li class="icon-check2">
-										ACTION:Review Service Agreement with the customer such as Monthly Rate, Equipment, One-time Activation Fees, and Installation Fee(s) if applicable. Explain the process to the customer if they would like to move forward with setting up service. 
+										ACTION: Review Service Agreement with the customer such as Monthly Rate, Equipment, One-time Activation Fees, and Installation Fee(s) if applicable. Explain the process to the customer if they would like to move forward with setting up service. 
 									</li>
                                     <li class="icon-school">
                                     I will be sending you the Service Agreement to look over and review. If everything looks good you can print the contract, sign and date the appropriate fields and be sure to also include your Federal Tax ID on the page where the field is provided. You can scan and email the signed Service Agreement back or fax it to us at 858-430-3155.
@@ -273,10 +274,10 @@
 								</p>  
             
                                 <a class="section" id="sh_outbound">name</a>
-                                <h3>Start Here (Outbound Calls)</h3><hr>            
-								<a name="outbound_begin"></a>
+                                <h3>Start Here (Outbound Calls)</h3>    
+								<a class="section" name="outbound_begin">name</a>                                
                                 <h4>Begin</h4>
-                                <span class="option"><b>[PITCH 1]</b></span>
+                                <ul><span class="option"><b>[PITCH 1]</b></span>
                                 <li class="icon-school">Hello, may I speak to _________?” (name attached to lead or person in charge of Internet & Phone service for the Business)</li>                                
                                 <li class="icon-school">My name is _______, I’m calling in regards to the Business Internet and Phone services.</li>
                                 <li class="icon-check2">ACTION: If lead is interested, click on Connector-Salerity Lead button on Five9 to create a blank form for you to collect leads information.</li></br>
@@ -288,10 +289,10 @@
                                 <li class="icon-school">Hello, my name is ______ how are you doing today?</li>
                                 <li class="icon-school">The reason for my call today is to reach out to businesses like yours to see if they would like help finding them the most efficient Internet and Phone solutions for your business to run at its very best, or help you save money month to month on your service bills! Do you have a moment to see your options today?</li>
                                 <li class="icon-check2">ACTION: If lead is interested, click on Connector-Salerity Lead button on Five9 to create a blank form for you to collect leads information.</li>
-            
+                                </ul>
                                 <a class="section" id="voicemails">name</a>
-								<h3>Voicemails</h3><hr>
-								<a name="follow-up-message"></a>
+								<h3>Voicemails</h3>
+								<a class="section" name="follow-up-message">name</a>                            
 								<h4>Follow Up Message</h4>
 								<ul class="icon-check">
 									<li class="icon-school">
@@ -316,8 +317,10 @@
 									&nbsp;
 								</p>
                                 <a class="section" id="followupmessages">name</a>
-								<h3>Follow Up Messages</h3>
-                                <hr>
+								<h3>Follow Up Messages</h3>   
+                                <p>
+									&nbsp;
+								</p>
 								<a name="missed-call-fu"></a>
 								<h4>Missed Call Follow Up</h4>
 								<ul class="icon-check">
@@ -328,7 +331,7 @@
 										ACTION: Sales - Create a lead in Salerity, if one has not been created already, using Connector-Salerity Lead button
 									</li>
 									<li class="icon-check2">
-										ACTION: Non-sales, refer lead to the provider <a href="#cs_modal" data-toggle="modal">Customer Service Number</a>
+										ACTION: Non-sales - refer lead to the provider <a href="#cs_modal" data-toggle="modal">Customer Service Number</a>
 									</li>
 								</ul><br>
                                 <a name="web-lead-fu"></a>
@@ -341,7 +344,7 @@
 										ACTION: Sales - Use Web Lead already created to proceed with a new order. Create new lead in Telarus and proceed to quote
 									</li>
 									<li class="icon-check2">
-										ACTION:Non-sales: Refer lead to the provider <a href="#cs_modal" data-toggle="modal">Customer Service Number</a>
+										ACTION: Non-sales - Refer lead to the provider <a href="#cs_modal" data-toggle="modal">Customer Service Number</a>
 									</li>
 								</ul>
                                 <p>
@@ -349,8 +352,10 @@
 								</p>                                                                            
                                 <a class="section" id="salesissues">name</a>
 								<h3>Sales Issues</h3>
-                                <hr>
-								<a name="service-issue"></a>
+                                <p>
+									&nbsp;
+								</p>
+                                <a name="service-issue"></a>
 								<h4>Serviceability Issues</h4>
 								<ul class="icon-check">
 
@@ -381,7 +386,9 @@
 								</p>                                            
                                 <a class="section" id="nonsales">name</a>
 								<h3>Non-Sales</h3>
-                                <hr>
+                                <p>
+									&nbsp;
+								</p>
 								<a name="billing-support"></a>
 								<h4>Billing Support</h4>
 								<ul class="icon-check">
@@ -419,8 +426,7 @@
 						</div>
 					</div>
                         </div>
-                    </div>
-                    <hr>                    
+                    </div>           
     </div>
 </div>
 <!-- /Main -->
@@ -572,8 +578,7 @@
                     <ul>
                     <b>Resources</b>
                     <li><a href="http://maps.google.com" title="click to open" target="_blank">&nbsp;&nbsp;Google Maps</a></li>
-					<li><a href="https://www2.charterbusiness.com/partner/tlr" title="click to open" target="_blank">&nbsp;&nbsp;Charter Serviceability</a></li>			
-                    <hr>				    
+					<li><a href="https://www2.charterbusiness.com/partner/tlr" title="click to open" target="_blank">&nbsp;&nbsp;Charter Serviceability</a></li>				    
                     <b>Partner Portals</b>
                     <li><a href="http://agent.telarus.com/login.cfm" title="click to open" target="_blank">&nbsp;&nbsp;Telarus</a></li>                   
                     <li><a href="https://caps.cox.com/" title="click to open" target="_blank">&nbsp;&nbsp;CAPS Cox Portal</a></li>		

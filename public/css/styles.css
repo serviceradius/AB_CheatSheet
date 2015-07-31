@@ -8,11 +8,15 @@ body{
 i {
   font-size:16px;
 }
-
+.nav{
+  z-index: 999;
+}
 .nav > li > a {
   color: #9bc9f6;
 }
-  
+.row{
+    background-color: #aaa;
+}
 footer {
   margin-top:20px;
   padding-top:20px;
@@ -21,7 +25,6 @@ footer {
   background-color:#2494f2;
   width: 1629px;
 }
-
 /* count indicator near icons */
 .nav>li .count {
   position: absolute;
@@ -139,7 +142,9 @@ li > a:active{
     background-color: #272930;
     border-top: 2px green;
 }
-
+.panel-body{
+    padding: 10px 60px 0px 60px;
+}
 .sub{
     margin-left: 15px;
     margin-right:15px;
@@ -167,11 +172,20 @@ h3:before{
   padding-bottom:1000px;
 }
 h3{
-    border-radius: 5px;
-    background: #2494f2;
+
+    border-radius: 3px;
+    border: 1px solid #c3882f;
+    background: #F3B042;
     padding: 10px;
-    color: white;    
-    box-shadow: 3px 3px  #000;
+    /* height: 200px; */
+    background: -webkit-linear-gradient(#c58c34, #fad97a 40%, #cd994a 55%, #eac17c 85%, #c3882f 100%);
+    background: -o-linear-gradient(red 10%, green 85%, blue 90%);
+    background: -moz-linear-gradient(red 10%, green 85%, blue 90%);
+    /* background: linear-gradient(red 10%, green 85%, blue 90%); */
+    color: white;
+    box-shadow: 2px 2px 5px #666;
+    text-shadow: 1px 1px 4px #444;
+    }
 }
 .nostyle{
     border-radius: 0px;
@@ -181,15 +195,17 @@ h3{
 }
 .nostyle2{
     border-radius: 0px;
-    background: none;
-    
+    background: none;    
     box-shadow: none;
     color: #FFF;
 }
 h4{
     font-size: 22px;
-    color: #3366CC;
+    color: #B17308;
     font-weight: bold;
+}
+h5{
+    margin-left:30px;
 }
 h4:before{
   display: block; 
@@ -242,7 +258,7 @@ h4:before{
 }
 .section{
     visibility: hidden;
-    padding-top: 50px;
+    padding-top: 100px;
 }
 .nav-tabs > li > a{
     color: black;
